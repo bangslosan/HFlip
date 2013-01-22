@@ -1,0 +1,42 @@
+Appcelerator Titanium iPhone Module Project
+===========================================
+
+This is a skeleton Titanium Mobile iPhone module project.  Modules can be 
+used to extend the functionality of Titanium by providing additional native
+code that is compiled into your application at build time and can expose certain
+APIs into JavaScript. 
+
+INSTALL YOUR MODULE
+--------------------
+
+1. Run `build.py` which creates your distribution
+2. cd to `/Library/Application Support/Titanium`
+3. copy this zip file into the folder of your Titanium SDK
+
+REGISTER YOUR MODULE
+---------------------
+
+Register your module with your application by editing `tiapp.xml` and adding your module.
+Example:
+
+<modules>
+	<module version="0.1">com.hflip</module>
+</modules>
+
+When you run your project, the compiler will know automatically compile in your module
+dependencies and copy appropriate image assets into the application.
+
+USING THE MODULE IN CODE
+------------------------
+
+To use your module in code, you will need to require it. 
+
+For example,
+
+	var my_module = require('com.hflip');
+	my_module.foo();
+
+
+
+
+Cheers!
